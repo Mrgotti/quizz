@@ -1,5 +1,5 @@
 exports.run = (client, message) => {
-    message.channel.send("Bievenue à toi ");
+    message.channel.send("Bienvenue à toi ");
   
 
     

@@ -1,8 +1,8 @@
 const Discord = require("discord.js");
 exports.run = (client, message, [mention, ...reason]) => {
   const modRole = message.guild.roles.find(role => role.name === "Mods");
-  if (!modRole)
-    return console.log("Le role Mods n'hésite pas!");
+  if(!modRole) { 
+    return message.channel.send("l'utilisateur nexiste pas ou non reconnue") };
 
   if (!message.member.roles.has(modRole.id))
     return message.reply("Hey oh ?!!! Tu n'a pas les droits de faire cela!");
